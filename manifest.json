@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Chota_Chetan | Short links and QR Codes",
     "version": "1.0",
-    "description": "A URL Shortner",
+    "description": "A URL Shortener",
     "permissions": [
       "tabs",
       "activeTab"
@@ -17,12 +17,12 @@
       "default_title": "Chota_Chetan"
     },
     "icons": {
-        "16": "./assets/chota_chetan16.png",
-        "48": "./assets/chota_chetan48.png",
-        "128": "./assets/chota_chetan128.png"
+      "16": "./assets/chota_chetan16.png",
+      "48": "./assets/chota_chetan48.png",
+      "128": "./assets/chota_chetan128.png"
     },
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "popup.js"
     },
     "content_scripts": [
       {
@@ -31,14 +31,7 @@
         ],
         "js": ["content.js"]
       }
-    ],
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "./assets/chota_chetan16.png",
-        "48": "./assets/chota_chetan48.png",
-        "128": "./assets/chota_chetan128.png"
-      }
-    }
-  }
-  
+    ]
+      
+      
+  }  
